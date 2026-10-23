@@ -1,0 +1,6 @@
+{
+  "name": "MATH AI - Intelligent Mathematical Solver & Classroom",
+  "description": "AI-powered mathematical problem solver, step-by-step tutor, adaptive quiz generator, and teacher-student classroom management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

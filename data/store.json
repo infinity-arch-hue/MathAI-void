@@ -1,0 +1,425 @@
+{
+  "users": [
+    {
+      "id": "S1024",
+      "name": "Alex Turner",
+      "age": 16,
+      "email": "student@example.com",
+      "role": "student",
+      "passwordHash": "password123",
+      "educationLevel": "school",
+      "standard": 10,
+      "classId": "DWX58219",
+      "createdAt": "2026-10-15T02:49:25.664Z"
+    },
+    {
+      "id": "T9042",
+      "name": "David Wilson",
+      "age": 38,
+      "email": "teacher@example.com",
+      "role": "teacher",
+      "passwordHash": "password123",
+      "educationLevel": "none",
+      "createdAt": "2026-10-08T02:49:25.665Z"
+    },
+    {
+      "id": "T9122",
+      "name": "Alan Turing",
+      "age": 41,
+      "email": "alan.turing@cambridge.edu",
+      "role": "teacher",
+      "passwordHash": "SecretPassword123!",
+      "educationLevel": "none",
+      "createdAt": "2026-10-22T03:12:37.289Z"
+    },
+    {
+      "id": "S1948",
+      "name": "Ada Lovelace",
+      "age": 17,
+      "email": "ada.lovelace@math.org",
+      "role": "student",
+      "passwordHash": "AdaPassword123!",
+      "educationLevel": "school",
+      "standard": 12,
+      "createdAt": "2026-10-22T03:12:37.297Z"
+    }
+  ],
+  "classrooms": [
+    {
+      "classId": "DWX58219",
+      "className": "Class 10A Mathematics",
+      "teacherId": "T9042",
+      "teacherName": "David Wilson",
+      "studentIds": [
+        "S1024"
+      ],
+      "createdAt": "2026-10-12T02:49:25.665Z"
+    },
+    {
+      "classId": "DWK34912",
+      "className": "Algebra & Calculus Honors",
+      "teacherId": "T9042",
+      "teacherName": "David Wilson",
+      "studentIds": [],
+      "createdAt": "2026-10-19T02:49:25.665Z"
+    }
+  ],
+  "mathHistory": [
+    {
+      "id": "hist-1",
+      "userId": "S1024",
+      "userName": "Alex Turner",
+      "question": "Solve 2x^2 + 5x - 3 = 0",
+      "classification": "Algebra",
+      "stepProcedure": [
+        "Step 1: Identify coefficients a = 2, b = 5, c = -3.",
+        "Step 2: Calculate the discriminant D = b^2 - 4ac = 5^2 - 4(2)(-3) = 25 + 24 = 49.",
+        "Step 3: Apply the quadratic formula x = (-b ± sqrt(D)) / (2a).",
+        "Step 4: Compute x1 = (-5 + 7) / 4 = 2 / 4 = 0.5 and x2 = (-5 - 7) / 4 = -12 / 4 = -3."
+      ],
+      "englishExplanation": "This is a quadratic equation solved using the standard quadratic formula. We first found the discriminant 49, which is positive, indicating two real distinct roots. Calculating both positive and negative square roots yielded 0.5 and -3.",
+      "finalAnswer": "x = 0.5 or x = -3",
+      "queryType": "math_problem",
+      "timestamp": "2026-10-22T01:49:25.665Z"
+    }
+  ],
+  "wrongAnswers": [
+    {
+      "id": "wrong-1",
+      "userId": "S1024",
+      "question": "What is the sum of angles in a regular pentagon?",
+      "options": [
+        "360°",
+        "540°",
+        "720°",
+        "180°"
+      ],
+      "correctAnswer": "540°",
+      "userAnswer": "360°",
+      "classification": "Geometry",
+      "correctTimesInRandomQuiz": 0,
+      "explanation": "For an n-sided polygon, sum = (n - 2) * 180°. For pentagon n=5, (5-2)*180 = 540°.",
+      "timestamp": "2026-10-21T02:49:25.665Z"
+    },
+    {
+      "id": "wrong-2",
+      "userId": "S1024",
+      "question": "Evaluate sin(90°) * cos(0°)",
+      "options": [
+        "0",
+        "1",
+        "0.5",
+        "2"
+      ],
+      "correctAnswer": "1",
+      "userAnswer": "0",
+      "classification": "Trigonometry",
+      "correctTimesInRandomQuiz": 0,
+      "explanation": "sin(90°) = 1 and cos(0°) = 1, so 1 * 1 = 1.",
+      "timestamp": "2026-10-21T14:49:25.665Z"
+    }
+  ],
+  "teacherQuizzes": [
+    {
+      "id": "tquiz-1792753426242-r5c1",
+      "classId": "DWX58219",
+      "teacherId": "T9042",
+      "teacherName": "David Wilson",
+      "title": "Test Quadratic Evaluation",
+      "questionCount": 1,
+      "questions": [
+        {
+          "id": "tq-1792753426239-0",
+          "question": "Solve 2x = 10",
+          "options": [
+            "x=5",
+            "x=2",
+            "x=10",
+            "x=1"
+          ],
+          "correctAnswer": "x=5",
+          "classification": "Algebra"
+        }
+      ],
+      "createdAt": "2026-10-23T11:03:46.242Z"
+    },
+    {
+      "id": "quiz-dw-1",
+      "classId": "DWX58219",
+      "teacherId": "T9042",
+      "teacherName": "David Wilson",
+      "title": "Class 10 Mid-Term Math Check",
+      "questionCount": 5,
+      "questions": [
+        {
+          "id": "tq-1",
+          "question": "Solve for x: 3x - 7 = 14",
+          "options": [
+            "x = 7",
+            "x = 5",
+            "x = 21",
+            "x = 6"
+          ],
+          "correctAnswer": "x = 7",
+          "classification": "Algebra"
+        },
+        {
+          "id": "tq-2",
+          "question": "What is the area of a right-angled triangle with base 6 and height 8?",
+          "options": [
+            "24",
+            "48",
+            "14",
+            "32"
+          ],
+          "correctAnswer": "24",
+          "classification": "Geometry"
+        },
+        {
+          "id": "tq-3",
+          "question": "Evaluate 2^5 * 2^2",
+          "options": [
+            "128",
+            "64",
+            "256",
+            "32"
+          ],
+          "correctAnswer": "128",
+          "classification": "Arithmetic"
+        },
+        {
+          "id": "tq-4",
+          "question": "Find the greatest common divisor (GCD) of 36 and 48",
+          "options": [
+            "12",
+            "6",
+            "18",
+            "24"
+          ],
+          "correctAnswer": "12",
+          "classification": "Number Theory"
+        },
+        {
+          "id": "tq-5",
+          "question": "If P(A) = 0.35, what is P(not A)?",
+          "options": [
+            "0.65",
+            "0.35",
+            "0.75",
+            "0.50"
+          ],
+          "correctAnswer": "0.65",
+          "classification": "Statistics & Probability"
+        }
+      ],
+      "createdAt": "2026-10-20T02:49:25.665Z"
+    }
+  ],
+  "quizSubmissions": [
+    {
+      "quizId": "quiz-1792637800192",
+      "quizTitle": "AI Random 10-Question Quiz",
+      "studentId": "guest",
+      "studentName": "Guest",
+      "score": 2,
+      "totalQuestions": 10,
+      "answers": [
+        {
+          "questionId": "qp-10",
+          "question": "What is the determinant of matrix [[2, 3], [1, 4]]?",
+          "options": [
+            "8",
+            "6",
+            "5",
+            "11"
+          ],
+          "selectedAnswer": "8",
+          "correctAnswer": "5",
+          "classification": "Linear Algebra",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-2",
+          "question": "What is the value of 12 * 8 - 36 / 4?",
+          "options": [
+            "90",
+            "84",
+            "96",
+            "87"
+          ],
+          "selectedAnswer": "90",
+          "correctAnswer": "87",
+          "classification": "Arithmetic",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-13",
+          "question": "What is the greatest common divisor (GCD) of 45 and 60?",
+          "options": [
+            "5",
+            "9",
+            "15",
+            "30"
+          ],
+          "selectedAnswer": "5",
+          "correctAnswer": "15",
+          "classification": "Number Theory",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-4",
+          "question": "What is the value of sin(30°)?",
+          "options": [
+            "0.5",
+            "0.707",
+            "1",
+            "0"
+          ],
+          "selectedAnswer": "0.5",
+          "correctAnswer": "0.5",
+          "classification": "Trigonometry",
+          "isRetryQuestion": false,
+          "isCorrect": true
+        },
+        {
+          "questionId": "qp-5",
+          "question": "What is the derivative of f(x) = 3x^2 + 4x - 5 with respect to x?",
+          "options": [
+            "3x + 4",
+            "6x^2 + 4",
+            "6x + 4",
+            "6x - 5"
+          ],
+          "selectedAnswer": "3x + 4",
+          "correctAnswer": "6x + 4",
+          "classification": "Calculus & Analysis",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-9",
+          "question": "What is the probability of flipping heads on a fair coin?",
+          "options": [
+            "0.25",
+            "0.5",
+            "1.0",
+            "0.75"
+          ],
+          "selectedAnswer": "0.25",
+          "correctAnswer": "0.5",
+          "classification": "Statistics & Probability",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-7",
+          "question": "In how many ways can 4 books be arranged on a shelf?",
+          "options": [
+            "8",
+            "16",
+            "24",
+            "12"
+          ],
+          "selectedAnswer": "8",
+          "correctAnswer": "24",
+          "classification": "Combinatorics",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-12",
+          "question": "What is the area of a circle with diameter 10? (use π = 3.14)",
+          "options": [
+            "31.4",
+            "78.5",
+            "314",
+            "15.7"
+          ],
+          "selectedAnswer": "31.4",
+          "correctAnswer": "78.5",
+          "classification": "Geometry",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        },
+        {
+          "questionId": "qp-15",
+          "question": "In game theory, what is an outcome where neither player can benefit by unilaterally changing strategy?",
+          "options": [
+            "Nash Equilibrium",
+            "Pareto Worst",
+            "Dominant Loss",
+            "Minimax Null"
+          ],
+          "selectedAnswer": "Nash Equilibrium",
+          "correctAnswer": "Nash Equilibrium",
+          "classification": "Game Theory",
+          "isRetryQuestion": false,
+          "isCorrect": true
+        },
+        {
+          "questionId": "qp-3",
+          "question": "What is the sum of the interior angles of a triangle?",
+          "options": [
+            "90°",
+            "180°",
+            "360°",
+            "270°"
+          ],
+          "selectedAnswer": "90°",
+          "correctAnswer": "180°",
+          "classification": "Geometry",
+          "isRetryQuestion": false,
+          "isCorrect": false
+        }
+      ],
+      "id": "sub-1792637800192-gose",
+      "submittedAt": "2026-10-22T02:56:40.192Z"
+    },
+    {
+      "id": "sub-1",
+      "quizId": "quiz-dw-1",
+      "quizTitle": "Class 10 Mid-Term Math Check",
+      "classId": "DWX58219",
+      "studentId": "S1024",
+      "studentName": "Alex Turner",
+      "score": 4,
+      "totalQuestions": 5,
+      "answers": [],
+      "submittedAt": "2026-10-21T02:49:25.665Z"
+    }
+  ],
+  "studentProgress": {
+    "S1024": {
+      "studentId": "S1024",
+      "studentName": "Alex Turner",
+      "email": "student@example.com",
+      "classId": "DWX58219",
+      "questionsSolvedCount": 0,
+      "aiUsageCount": 0,
+      "quizMistakeCount": 0,
+      "quizCorrectCount": 0,
+      "teacherTestPercentages": [],
+      "overallAccuracyRate": 0,
+      "weakTopics": [],
+      "recentMarks": [],
+      "lastActive": "2026-10-22T02:49:25.665Z"
+    },
+    "S1948": {
+      "studentId": "S1948",
+      "studentName": "Ada Lovelace",
+      "email": "ada.lovelace@math.org",
+      "questionsSolvedCount": 0,
+      "aiUsageCount": 0,
+      "quizMistakeCount": 0,
+      "quizCorrectCount": 0,
+      "teacherTestPercentages": [],
+      "overallAccuracyRate": 0,
+      "weakTopics": [],
+      "recentMarks": [],
+      "lastActive": "2026-10-22T03:12:37.297Z"
+    }
+  }
+}
